@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ChronicOS Terms of Use (EULA) — license, subscriptions, AI features, family profiles, and user responsibilities." />
+  <meta name="description" content="ChronicOS Terms of Use (EULA) — license, subscriptions, AI features, Patient Portal Sync (Beta), and user responsibilities. Version 1.0.0." />
   <title>ChronicOS Terms of Use (EULA)</title>
   <style>
     :root {
@@ -98,6 +98,9 @@
       padding-left: 14px;
       margin-top: 16px;
     }
+    .notice-warn {
+      border-left-color: #b45309;
+    }
     .caps {
       font-size: 0.92rem;
       line-height: 1.55;
@@ -123,9 +126,9 @@
       <h1>ChronicOS Terms of Use</h1>
       <p class="meta">
         <strong>End User License Agreement (EULA)</strong><br />
-        <strong>Effective date:</strong> June 5, 2026<br />
-        <strong>Last updated:</strong> June 5, 2026<br />
-        <strong>Application:</strong> ChronicOS (Bundle ID: com.jchen.ChronicOS) for iOS and Android<br />
+        <strong>Effective date:</strong> June 7, 2026<br />
+        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Licensor:</strong> An individual software developer publishing ChronicOS (&ldquo;Developer,&rdquo; &ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
     </header>
@@ -140,15 +143,18 @@
         <p>
           If you do not agree, do not use the App. If you use the App on behalf of another person (for example, as a family caregiver), you represent that you have authority to bind that person to these Terms and that you may lawfully manage or share their health information as you configure in the App.
         </p>
+        <p>
+          <strong>Version 1.0.0 scope.</strong> At launch, the App provides manual health journaling, voice symptom entry (including an offline demo path), AI-assisted appointment preparation, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, optional cloud sign-in, and optional family and caregiver features. <strong>Patient Portal Sync</strong> (automatic import from U.S. health systems such as Epic MyChart) is displayed as <strong>Beta / Coming Soon</strong> and is <strong>not active</strong> in version 1.0.0.
+        </p>
         <p class="notice">
-          Where required by law, we request your consent before optional processing (for example, anonymous analytics, personalization, cloud sync, voice transcription, or AI features), as described in the Privacy Policy and in-app consent screens.
+          Where required by law, we request your consent before optional processing (for example, anonymous analytics, personalization, cloud sync, live voice transcription, or AI features), as described in the Privacy Policy and in-app consent screens.
         </p>
       </section>
 
       <section id="license">
         <h2>2. License Grant</h2>
         <p>
-          Subject to your compliance with these Terms and applicable App Store or Google Play rules, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use one copy of the App on devices you own or control, solely for your personal, non-commercial health organization and education purposes.
+          Subject to your compliance with these Terms and applicable App Store rules, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use one copy of the App on Apple-branded devices you own or control, solely for your personal, non-commercial health organization and education purposes.
         </p>
         <p>You may not:</p>
         <ul>
@@ -159,6 +165,7 @@
           <li>Scrape, mine, or use automated means to extract data from the App or its services</li>
           <li>Remove proprietary notices or circumvent security, encryption, usage limits, or subscription controls</li>
           <li>Access another user&rsquo;s account or health data without authorization</li>
+          <li>Attempt to enable, bypass, or reverse-engineer disabled features (including Patient Portal Sync before it is officially released)</li>
           <li>Use the App in violation of law or third-party rights</li>
         </ul>
       </section>
@@ -175,7 +182,7 @@
           <strong>HIPAA notice:</strong> Unless we expressly enter into a Business Associate Agreement with you or your organization, the Developer is <strong>not</strong> a HIPAA-covered entity or your healthcare provider. The App is offered as a consumer personal health record tool. You choose what to enter and with whom to share exports or caregiver access.
         </p>
         <p>
-          <strong>In a medical emergency, call 911 (U.S.) or your local emergency number immediately.</strong> Do not rely on the App for urgent or life-threatening situations.
+          <strong>In a medical emergency, call 911 (U.S.) or your local emergency number immediately.</strong> Do not rely on the App or email support for urgent or life-threatening situations.
         </p>
       </section>
 
@@ -186,12 +193,13 @@
         <p>Core features available without a paid subscription include, among others:</p>
         <ul>
           <li>Multi-condition home dashboard, condition trend charts, and alert center</li>
-          <li>Symptom and flare tracking (text and optional voice entry)</li>
+          <li>Symptom and flare tracking (text and optional voice entry, including offline demo sample)</li>
           <li>Unified health timeline</li>
           <li>Medication list, local interaction / safety scanning, reminders, and side-effect diary</li>
           <li>Doctor and visit records; visit preparation tools</li>
           <li>Between-visit Health Coach (weekly goals by disease combination)</li>
           <li>Rule-based health and medication safety alerts</li>
+          <li>Demo mode (<em>View Demo</em> on the welcome screen) with local sample data</li>
           <li>Basic monthly Health AI Points allowance on the free tier (approximately 20 points, as displayed in-app)</li>
         </ul>
 
@@ -250,6 +258,20 @@
         <p>
           Sign-in and cloud sync are optional. When enabled, encrypted health payloads may be stored on our backend (see Privacy Policy). Remote caregiver access requires authenticated accounts on both sides and shares data only according to permission tiers you assign. You are responsible for invitations you send and for revoking access when no longer needed.
         </p>
+
+        <h3>4.6 Patient Portal Sync (Beta / Coming Soon)</h3>
+        <p>
+          The App includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
+        </p>
+        <ul>
+          <li><strong>No OAuth, FHIR, or patient portal connection is activated.</strong> The App cannot log in to your patient portal or download portal records.</li>
+          <li><strong>No portal credentials</strong> are collected, stored, or transmitted by us in this version.</li>
+          <li><strong>Waitlist (optional):</strong> You may join a waitlist by entering an email address stored locally on your device, or by emailing us at <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> as described in the Privacy Policy.</li>
+          <li><strong>Future releases:</strong> When Patient Portal Sync becomes available, we will update these Terms and the Privacy Policy, request any additional consent required by law, and describe applicable third-party health system terms before enabling live connections.</li>
+        </ul>
+        <p class="notice notice-warn">
+          <strong>No reliance on unreleased features.</strong> Descriptions of Patient Portal Sync are forward-looking and for informational purposes only. You agree not to rely on Beta / Coming Soon features for clinical decisions or data completeness in version 1.0.0.
+        </p>
       </section>
 
       <section id="ai">
@@ -259,7 +281,8 @@
         </p>
         <ul>
           <li>AI features may consume Health AI Points as shown in-app</li>
-          <li>Voice transcription requires microphone permission and a network connection when you initiate recording</li>
+          <li><strong>Offline demo path:</strong> <em>Try demo sample</em> in Voice Symptom uses sample text without uploading audio and does not require sign-in or server configuration</li>
+          <li><strong>Live voice transcription:</strong> Requires microphone permission, sign-in, and a network connection when you initiate recording</li>
           <li>We may use third-party AI or speech providers to fulfill your request; see the Privacy Policy</li>
           <li>We may modify, limit, or discontinue AI models or features at any time</li>
         </ul>
@@ -271,18 +294,18 @@
       <section id="billing">
         <h2>6. Subscriptions, Billing, and Refunds</h2>
         <p>
-          Purchases are processed by <strong>Apple App Store</strong> (iOS) or <strong>Google Play</strong> (Android). We do not collect or store your full payment card number. Payment will be charged to your Apple ID or Google account at confirmation of purchase.
+          Purchases are processed by the <strong>Apple App Store</strong>. We do not collect or store your full payment card number. Payment will be charged to your Apple ID at confirmation of purchase.
         </p>
         <ul>
-          <li><strong>Auto-renewal:</strong> Subscriptions automatically renew unless canceled at least <strong>24 hours</strong> before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the price shown in the store.</li>
-          <li><strong>Manage / cancel (iOS):</strong> Settings &rarr; Apple ID &rarr; Subscriptions &rarr; ChronicOS</li>
-          <li><strong>Manage / cancel (Android):</strong> Google Play &rarr; Payments &amp; subscriptions</li>
+          <li><strong>Auto-renewal:</strong> Subscriptions automatically renew unless canceled at least <strong>24 hours</strong> before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the price shown in the App Store.</li>
+          <li><strong>Manage / cancel:</strong> Settings &rarr; Apple ID &rarr; Subscriptions &rarr; ChronicOS</li>
+          <li><strong>Restore purchases:</strong> Available from Profile &rarr; Health AI Points / Subscription in the App where shown</li>
           <li><strong>Deleting the App does not cancel</strong> an active subscription</li>
-          <li><strong>Price changes:</strong> We may change subscription prices with notice as required by Apple, Google, or applicable law; continued use after the change may constitute acceptance where permitted</li>
-          <li><strong>Refunds:</strong> Refund requests are handled by Apple or Google under their policies. Contact us at
-            <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Support%20Request">hello@familymedvault.com</a> for account or entitlement help; we cannot override store refund decisions</li>
+          <li><strong>Price changes:</strong> We may change subscription prices with notice as required by Apple or applicable law; continued use after the change may constitute acceptance where permitted</li>
+          <li><strong>Refunds:</strong> Refund requests are handled by Apple under its policies. Contact us at
+            <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Support%20Request">hello@familymedvault.com</a> for account or entitlement help; we cannot override App Store refund decisions</li>
           <li><strong>Trials and promotions:</strong> Any free trial or promotional offer converts to a paid subscription unless canceled before the trial ends, as disclosed at purchase</li>
-          <li><strong>Taxes:</strong> Prices may exclude applicable taxes, which are collected by the store where required</li>
+          <li><strong>Taxes:</strong> Prices may exclude applicable taxes, which are collected by Apple where required</li>
         </ul>
         <p class="notice">
           By subscribing or purchasing consumables, you acknowledge that you have read and agree to these Terms and the <a href="privacy-policy.html">Privacy Policy</a>.
@@ -295,13 +318,13 @@
           You may use much of the App without an account. Optional sign-in enables cloud backup or sync and remote caregiver collaboration. You are responsible for safeguarding credentials and for all activity under your account.
         </p>
         <p>
-          <strong>Family profiles:</strong> On a Family plan, you may create multiple household member profiles on your device. Each patient&rsquo;s data is stored in a separate local namespace unless you enable cloud sync.
+          <strong>Family profiles:</strong> On a Family plan, you may create multiple household member profiles on your device. Each patient&rsquo;s data is stored in a separate local namespace unless you enable cloud sync. Without an active Family subscription, household features beyond a single patient profile are not available.
         </p>
         <p>
           <strong>Caregivers:</strong> If you invite caregivers, you choose permission levels (full access, medication only, or appointment access). You represent that you have the right to share health information you disclose to caregivers. We are not responsible for misuse by persons you invite or for their independent use of exported data.
         </p>
         <p>
-          <strong>FHIR / patient portal:</strong> Optional connections import data you authorize from third-party health systems; their terms and privacy policies apply to those connections.
+          <strong>Patient Portal Sync:</strong> As described in Section 4.6, portal import is not available in version 1.0.0. When enabled in a future release, connections will import data you authorize from third-party health systems, and their terms and privacy policies will apply to those connections.
         </p>
         <p>
           We do not guarantee recovery of data after device loss, factory reset, or uninstall if you did not enable cloud sync or maintain your own backups.
@@ -316,6 +339,7 @@
           <li>Use the App only for lawful purposes and in compliance with applicable health-information laws</li>
           <li>Not upload content that infringes others&rsquo; rights, violates privacy, or contains malware</li>
           <li>Not attempt to access other users&rsquo; data without authorization</li>
+          <li>Not provide patient portal passwords or credentials to us by email or support channels</li>
           <li>Not use the App if you are prohibited under applicable export-control or sanctions laws</li>
         </ul>
         <p>
@@ -327,8 +351,11 @@
         <h2>9. Privacy</h2>
         <p>
           Our collection, use, disclosure, and retention of personal information is described in the
-          <a href="privacy-policy.html">Privacy Policy</a>. You may export local data as JSON and delete local data from Profile &rarr; Settings. To request cloud deletion, email
+          <a href="privacy-policy.html">Privacy Policy</a>. You may export local data as JSON and delete local data from Profile &rarr; Settings &amp; privacy. To request cloud deletion, email
           <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Privacy%20Request">hello@familymedvault.com</a> with subject <strong>ChronicOS Privacy Request</strong>.
+        </p>
+        <p>
+          For version 1.0.0, we do not collect health data from third-party patient portals because Patient Portal Sync is not operational at launch.
         </p>
       </section>
 
@@ -345,10 +372,10 @@
       <section id="availability">
         <h2>11. Availability and Changes</h2>
         <p>
-          We may modify, suspend, or discontinue any part of the App at any time, including features, AI models, subscription benefits, or point allowances. We do not guarantee uninterrupted or error-free operation. Maintenance, updates, and third-party outages (including cloud, AI, or speech providers) may affect availability.
+          We may modify, suspend, or discontinue any part of the App at any time, including features, AI models, subscription benefits, point allowances, or planned integrations such as Patient Portal Sync. We do not guarantee uninterrupted or error-free operation. Maintenance, updates, and third-party outages (including cloud, AI, or speech providers) may affect availability.
         </p>
         <p>
-          We may update these Terms. Material changes will be posted at this URL with a revised &ldquo;Last updated&rdquo; date. For material changes, we may provide additional notice in the App or by email where appropriate. Continued use after the effective date constitutes acceptance, except where law requires additional consent.
+          We may update these Terms. Material changes will be posted at this URL with a revised &ldquo;Last updated&rdquo; date. For material changes, we may provide additional notice in the App or by email where appropriate. Continued use after the effective date constitutes acceptance, except where law requires additional consent. When Patient Portal Sync or other material features become live, we will update these Terms before or at activation where required.
         </p>
       </section>
 
@@ -362,10 +389,10 @@
       <section id="warranty">
         <h2>13. Disclaimer of Warranties</h2>
         <p class="caps">
-          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP AND ALL CONTENT, AI OUTPUTS, ALERTS, COACHING, CHART REFERENCE BANDS, AND RELATED SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT.
+          TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP AND ALL CONTENT, AI OUTPUTS, ALERTS, COACHING, CHART REFERENCE BANDS, BETA / COMING SOON FEATURE DESCRIPTIONS, AND RELATED SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT.
         </p>
         <p class="caps">
-          WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, SECURE, ERROR-FREE, OR THAT AI OUTPUTS, ALERTS, INTERACTION SCANS, OR COACHING WILL BE ACCURATE, COMPLETE, OR SUITABLE FOR ANY CLINICAL PURPOSE.
+          WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, SECURE, ERROR-FREE, OR THAT AI OUTPUTS, ALERTS, INTERACTION SCANS, COACHING, OR FUTURE PATIENT PORTAL SYNC WILL BE ACCURATE, COMPLETE, TIMELY, OR SUITABLE FOR ANY CLINICAL PURPOSE.
         </p>
         <p class="notice">
           Some jurisdictions do not allow exclusion of implied warranties; in those jurisdictions, the above exclusions apply to the fullest extent permitted.
@@ -375,10 +402,10 @@
       <section id="liability">
         <h2>14. Limitation of Liability</h2>
         <p class="caps">
-          TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER (AN INDIVIDUAL OPERATOR) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, GOODWILL, OR HEALTH OUTCOMES, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER (AN INDIVIDUAL OPERATOR) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, GOODWILL, OR HEALTH OUTCOMES, ARISING OUT OF OR RELATED TO YOUR USE OF OR INABILITY TO USE THE APP, YOUR RELIANCE ON BETA / COMING SOON FEATURES, OR YOUR USE OF AI OR VOICE OUTPUTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
         </p>
         <p class="caps">
-          TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER&rsquo;S TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE APP OR THESE TERMS SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS YOU PAID TO US (OR THROUGH THE APP STORES FOR THE APP OR IN-APP PURCHASES) IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50.00).
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER&rsquo;S TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE APP OR THESE TERMS SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS YOU PAID TO US (OR THROUGH THE APP STORE FOR THE APP OR IN-APP PURCHASES) IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50.00).
         </p>
         <p>
           Nothing in these Terms limits liability that cannot be limited under mandatory consumer protection, privacy, or health-safety laws in your jurisdiction (including certain GDPR/EEA rights).
@@ -388,17 +415,17 @@
       <section id="indemnity">
         <h2>15. Indemnification</h2>
         <p>
-          You agree to defend, indemnify, and hold harmless the Developer from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys&rsquo; fees) arising from your misuse of the App, your violation of these Terms, your health content, your sharing of data with caregivers or third parties, or your violation of applicable law, except to the extent caused by our gross negligence or willful misconduct where such limitation is prohibited by law.
+          You agree to defend, indemnify, and hold harmless the Developer from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys&rsquo; fees) arising from your misuse of the App, your violation of these Terms, your health content, your sharing of data with caregivers or third parties, your unauthorized sharing of another person&rsquo;s health information, or your violation of applicable law, except to the extent caused by our gross negligence or willful misconduct where such limitation is prohibited by law.
         </p>
       </section>
 
       <section id="termination">
         <h2>16. Termination</h2>
         <p>
-          You may stop using the App at any time and delete local data from Settings. Cancel active subscriptions through your store account; deleting the App alone does not cancel billing. We may suspend or terminate access if you breach these Terms, if we discontinue the App, or if required by law or App Store policies.
+          You may stop using the App at any time and delete local data from Settings &amp; privacy. Cancel active subscriptions through your Apple ID subscription settings; deleting the App alone does not cancel billing. We may suspend or terminate access if you breach these Terms, if we discontinue the App, or if required by law or App Store policies.
         </p>
         <p>
-          Sections that by nature should survive (including intellectual property, disclaimers, limitations of liability, indemnity, governing law, and Apple/Google provisions) will survive termination.
+          Sections that by nature should survive (including intellectual property, disclaimers, limitations of liability, indemnity, governing law, and Apple provisions) will survive termination.
         </p>
       </section>
 
@@ -413,7 +440,7 @@
       </section>
 
       <section id="apple">
-        <h2>18. Apple App Store Terms (iOS Users)</h2>
+        <h2>18. Apple App Store Terms (Required for iOS Users)</h2>
         <p>If you downloaded the App from the Apple App Store, you acknowledge and agree:</p>
         <ol>
           <li>These Terms are between you and the Developer only, not Apple Inc. (&ldquo;Apple&rdquo;).</li>
@@ -424,30 +451,25 @@
           <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you as a third-party beneficiary.</li>
           <li>You represent that (i) you are not located in a country subject to a U.S. Government embargo or designated as &ldquo;terrorist supporting,&rdquo; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
           <li>You must comply with applicable third-party terms when using the App (for example, your wireless data service agreement).</li>
+          <li>Subscription and consumable purchases are subject to Apple&rsquo;s payment terms. Apple is not responsible for the App&rsquo;s content, AI outputs, health information you enter, or Beta / Coming Soon feature descriptions.</li>
         </ol>
       </section>
 
-      <section id="google">
-        <h2>19. Google Play Terms (Android Users)</h2>
-        <p>
-          If you downloaded the App from Google Play, you also agree to Google Play&rsquo;s terms and policies. Google is not a party to these Terms and is not responsible for the App or its content. Refunds and subscription management on Android are handled through Google Play.
-        </p>
-      </section>
-
       <section id="misc">
-        <h2>20. General</h2>
+        <h2>19. General</h2>
         <ul>
           <li><strong>Entire agreement:</strong> These Terms and the Privacy Policy constitute the entire agreement regarding the App.</li>
           <li><strong>Severability:</strong> If any provision is unenforceable, the remainder stays in effect.</li>
           <li><strong>No waiver:</strong> Failure to enforce a provision is not a waiver.</li>
           <li><strong>Assignment:</strong> You may not assign these Terms without our consent; we may assign them in connection with a sale of the App or assets with notice where required.</li>
-          <li><strong>Individual developer:</strong> The App is offered by an individual developer, not a hospital, clinic, insurer, or clinical entity.</li>
+          <li><strong>Individual developer:</strong> The App is offered by an individual developer, not a hospital, clinic, insurer, or clinical entity. Our resources and support capacity are limited compared to enterprise healthcare organizations.</li>
           <li><strong>Force majeure:</strong> We are not liable for delays or failures caused by events beyond our reasonable control.</li>
+          <li><strong>Language:</strong> These Terms are written in English. Translated in-app text is for convenience; the English version controls to the extent permitted by law.</li>
         </ul>
       </section>
 
       <section id="contact">
-        <h2>21. Contact</h2>
+        <h2>20. Contact</h2>
         <p>
           Questions about these Terms or the App:
         </p>
@@ -471,7 +493,7 @@
         <a href="support.html">Technical Support</a>
       </p>
       <p class="notice" style="border: none; padding: 0; margin-top: 12px;">
-        This document is provided for App Store and Google Play compliance. It is not legal advice.
+        This document satisfies Apple App Store Terms of Use (EULA) URL requirements for ChronicOS version 1.0.0. It is not legal advice.
       </p>
     </footer>
   </div>
