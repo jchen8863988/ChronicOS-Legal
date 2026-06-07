@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ChronicOS Technical Support — contact, FAQ, subscriptions, cloud sync, family profiles, and troubleshooting." />
+  <meta name="description" content="ChronicOS Technical Support — contact, FAQ, subscriptions, Patient Portal Sync (Beta), cloud sync, and troubleshooting. Version 1.0.0." />
   <title>ChronicOS Technical Support</title>
   <style>
     :root {
@@ -100,6 +100,10 @@
       padding-left: 14px;
       margin-top: 16px;
     }
+    .notice-warn {
+      border-left-color: var(--warn);
+      color: var(--text);
+    }
     .emergency {
       border-left-color: var(--warn);
       color: var(--text);
@@ -135,9 +139,9 @@
     <header>
       <h1>ChronicOS Technical Support</h1>
       <p class="meta">
-        <strong>Effective date:</strong> June 5, 2026<br />
-        <strong>Last updated:</strong> June 5, 2026<br />
-        <strong>Application:</strong> ChronicOS (Bundle ID: com.jchen.ChronicOS) for iOS and Android<br />
+        <strong>Effective date:</strong> June 7, 2026<br />
+        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Operator:</strong> An individual software developer publishing ChronicOS (&ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
     </header>
@@ -153,6 +157,9 @@
             <strong>Privacy / data requests:</strong>
             <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Privacy%20Request">hello@familymedvault.com</a>
             (Subject: ChronicOS Privacy Request)<br />
+            <strong>Patient Portal Sync waitlist:</strong>
+            <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20waitlist%20%E2%80%94%20Epic%20MyChart">hello@familymedvault.com</a>
+            (Subject: ChronicOS waitlist — [provider name])<br />
             <strong>Security reports:</strong>
             <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Security%20Report">hello@familymedvault.com</a>
             (Subject: ChronicOS Security Report)<br />
@@ -169,8 +176,8 @@
         <h2>2. Before You Email</h2>
         <p>To help us resolve your issue faster, please include:</p>
         <ol>
-          <li><strong>App version</strong> — shown at the bottom of Profile, or in the App Store / TestFlight listing</li>
-          <li><strong>Device</strong> model and <strong>iOS or Android</strong> version</li>
+          <li><strong>App version</strong> — shown at the bottom of Profile, or in the App Store / TestFlight listing (currently 1.0.0)</li>
+          <li><strong>Device</strong> model and <strong>iOS</strong> version (iPhone or iPad)</li>
           <li><strong>ChronicOS plan</strong> (Free, Premium, or Family) if relevant</li>
           <li><strong>Account email</strong> (if signed in for cloud sync or caregiver features — never send passwords)</li>
           <li><strong>Steps to reproduce</strong> the problem</li>
@@ -183,7 +190,7 @@
       </section>
 
       <section id="overview">
-        <h2>3. About ChronicOS</h2>
+        <h2>3. About ChronicOS (Version 1.0.0)</h2>
         <p>
           ChronicOS helps adults organize and track multiple chronic conditions, medications, symptoms, labs, appointments, and caregiver collaboration. The App uses five main tabs:
         </p>
@@ -193,6 +200,19 @@
           <li><strong>Doctors</strong> — provider list and visit preparation</li>
           <li><strong>Medications</strong> — medication list, safety scanning, reminders, side-effect diary</li>
           <li><strong>Profile</strong> — account, settings, Health Coach, caregiver tools, family dashboard, legal links</li>
+        </ul>
+        <p><strong>What is included in version 1.0.0:</strong></p>
+        <ul>
+          <li>Manual entry of symptoms, medications, labs, vitals, and doctor visits</li>
+          <li>Voice symptom entry (live transcription when signed in, or offline <em>Try demo sample</em> path)</li>
+          <li>AI-assisted appointment preparation and related optional AI features (uses Health AI Points)</li>
+          <li>Rule-based alerts, on-device medication interaction scanning, between-visit Health Coach</li>
+          <li>Demo mode (<em>View Demo</em> on welcome screen) with local sample data</li>
+          <li>Optional cloud sign-in, backup/sync, family profiles, and remote caregiver collaboration</li>
+        </ul>
+        <p><strong>What is not active in version 1.0.0:</strong></p>
+        <ul>
+          <li><strong>Patient Portal Sync</strong> — automatic import from Epic MyChart, Cerner / Oracle Health, or athenahealth is shown as <strong>Beta / Coming Soon</strong> only. No OAuth, FHIR connection, or portal login is available at launch.</li>
         </ul>
         <p class="notice">
           ChronicOS is <strong>not</strong> a medical device, healthcare provider, insurer, or emergency service. Alerts, coaching tips, chart reference lines, and AI outputs are informational only and are not medical advice.
@@ -205,10 +225,25 @@
         <h3>Getting started &amp; onboarding</h3>
         <ul>
           <li><strong>First launch:</strong> Welcome screen &rarr; select conditions &rarr; privacy consent (analytics and personalization are optional) &rarr; main app.</li>
+          <li><strong>Explore without an account:</strong> On the welcome screen, tap <em>View Demo</em> to load sample data for exploration. No sign-in required for core navigation, visit prep, medication lists, or rule-based alerts.</li>
           <li><strong>Replay welcome guide:</strong> Profile &rarr; Settings &amp; privacy &rarr; <em>Replay welcome guide</em>. Does <strong>not</strong> delete your health data.</li>
-          <li><strong>Demo data:</strong> On the welcome screen, <em>View Demo</em> loads sample data for exploration only.</li>
-          <li><strong>Language:</strong> English or 中文 — toggle from the welcome screen or Profile &rarr; Settings.</li>
+          <li><strong>Language:</strong> English, 中文, or Español — toggle from the welcome screen or Profile &rarr; Settings &amp; privacy.</li>
         </ul>
+
+        <h3>Patient Portal Sync (Beta / Coming Soon)</h3>
+        <p>
+          Version 1.0.0 includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems. This feature is <strong>not operational</strong> at launch.
+        </p>
+        <ul>
+          <li><strong>Where to find it:</strong> Profile &rarr; Settings &amp; privacy &rarr; <em>Patient Portal Sync (Beta)</em></li>
+          <li><strong>What you will see:</strong> Cards for Epic MyChart (Coming Soon, Expected 2026), Cerner / Oracle Health, and athenahealth — each marked <em>Coming Soon</em></li>
+          <li><strong>No portal login in v1.0.0:</strong> The App cannot connect to your patient portal, collect portal credentials, or download FHIR records in this version.</li>
+          <li><strong>Join the waitlist (optional):</strong> Tap <em>Notify Me</em> (Epic) or <em>Join Waitlist</em> (Cerner / athenahealth). Enter your email — it is stored <strong>locally on your device</strong>. You may optionally open your mail app to send a pre-filled message to <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>; we receive your email only if you send that message or contact us separately.</li>
+          <li><strong>When it becomes available:</strong> We will announce a future App Store update, update our <a href="privacy-policy.html">Privacy Policy</a>, and request any additional consent required before enabling live portal connections.</li>
+        </ul>
+        <p class="notice notice-warn">
+          <strong>Do not email portal passwords.</strong> We will never ask for your MyChart, Cerner, or athenahealth login credentials by email. When Patient Portal Sync launches, sign-in will occur only through the App&rsquo;s in-app OAuth flow with your health system.
+        </p>
 
         <h3>Free vs Premium vs Family</h3>
         <table>
@@ -274,10 +309,10 @@
           <li><strong>AI Boost Packs</strong> (one-time consumables): 50 points (<code>com.jchen.ChronicOS.boost.50</code>, ~$4.99) or 100 points (<code>com.jchen.ChronicOS.boost.100</code>, ~$7.99)</li>
           <li><strong>What points are used for:</strong> AI appointment prep, provider summaries, lab interpretation, voice structuring, longitudinal analysis, medication interaction explanations, and similar optional AI features</li>
           <li><strong>Manage or cancel (iOS):</strong> Settings &rarr; Apple ID &rarr; Subscriptions &rarr; ChronicOS</li>
-          <li><strong>Manage or cancel (Android):</strong> Google Play &rarr; Payments &amp; subscriptions</li>
-          <li><strong>Refunds:</strong> Request through Apple or Google first; we cannot override store refund decisions</li>
-          <li><strong>Points not appearing after purchase:</strong> Force-quit and reopen the app; use Restore Purchases if shown; email us with your store receipt or transaction ID</li>
-          <li><strong>Deleting the App does not cancel</strong> an active subscription — cancel in your store account settings</li>
+          <li><strong>Restore purchases:</strong> Profile &rarr; Health AI Points / Subscription &rarr; Restore Purchases (if shown)</li>
+          <li><strong>Refunds:</strong> Request through Apple first; we cannot override App Store refund decisions</li>
+          <li><strong>Points not appearing after purchase:</strong> Force-quit and reopen the app; use Restore Purchases; email us with your store receipt or transaction ID</li>
+          <li><strong>Deleting the App does not cancel</strong> an active subscription — cancel in your Apple ID subscription settings</li>
         </ul>
         <p class="notice">
           By subscribing, you agree to our <a href="eula.html">Terms of Use (EULA)</a> and <a href="privacy-policy.html">Privacy Policy</a>. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.
@@ -296,9 +331,10 @@
         <h3>Account &amp; cloud sync</h3>
         <ul>
           <li>Sign-in is <strong>optional</strong> for local-only use; required for cloud backup/sync and remote caregiver features when enabled</li>
-          <li><strong>Sync to cloud:</strong> Profile &rarr; Settings &amp; privacy &rarr; sign in &rarr; <em>Sync to Postgres</em> (or equivalent sync action). Health payloads are encrypted in transit (HTTPS/TLS) and at the application layer (AES-256-GCM) on our backend</li>
+          <li><strong>Sign in:</strong> Profile &rarr; Account (email, Apple Sign In, or Google if enabled)</li>
+          <li><strong>Sync to cloud:</strong> Profile &rarr; Settings &amp; privacy &rarr; <em>Sync now</em>. Health payloads are encrypted in transit (HTTPS/TLS) and at the application layer (AES-256-GCM) on our backend</li>
+          <li>Production API (when using default configuration): <code>https://chronicos-api.vercel.app</code></li>
           <li>Common sync errors — <code>MISSING_API_BASE_URL</code>, <code>NOT_SIGNED_IN</code>, network timeout — check internet connection, sign-in status, and retry</li>
-          <li><strong>FHIR / patient portal</strong> (optional): Profile &rarr; connect flow; requires valid portal credentials from your health system</li>
           <li>We do not guarantee recovery of data after device loss, uninstall, or local deletion if you did not enable cloud sync</li>
         </ul>
 
@@ -306,6 +342,7 @@
         <ul>
           <li><strong>Family plan required</strong> for multiple household member profiles (up to 6 patients)</li>
           <li>Profile &rarr; <em>Family Dashboard</em> to add members and switch active patient</li>
+          <li>Without an active Family subscription, the app shows a plan-required message and returns to Profile</li>
           <li>Each patient&rsquo;s health data is stored in a separate local namespace on your device</li>
           <li>Household member names and profile data remain on-device unless you separately enable cloud sync</li>
         </ul>
@@ -331,7 +368,7 @@
         <ul>
           <li>Add medications under the <strong>Meds</strong> tab; interaction scanning runs on-device when your list changes</li>
           <li>Optional remote RxNorm lookup may send drug identifiers you submit for normalization</li>
-          <li>Enable reminders on each medication; allow notifications when iOS or Android prompts you</li>
+          <li>Enable reminders on each medication; allow notifications when iOS prompts you</li>
           <li>Side-effect diary and clinician export PDF available from medication detail</li>
           <li>Mark medications inactive instead of deleting duplicates when cleaning up your list</li>
         </ul>
@@ -339,13 +376,15 @@
         <h3>Symptoms, voice &amp; timeline</h3>
         <ul>
           <li>Log symptoms from the Timeline tab (text entry)</li>
-          <li><strong>Voice symptoms:</strong> microphone permission required; audio is sent for transcription only when you initiate voice entry and a network connection is available</li>
+          <li><strong>Voice symptoms:</strong> Timeline &rarr; Symptoms &rarr; <em>Voice Symptom</em> (also available from Timeline hub or Home dashboard). Microphone permission required for live recording.</li>
+          <li><strong>Offline / review path:</strong> Tap <em>Try demo sample</em> to preview structured symptoms without uploading audio or requiring server configuration. Review results, then tap <em>Save to Patient Timeline</em>.</li>
+          <li><strong>Live transcription:</strong> Requires sign-in and backend configuration (Profile &rarr; Account). Audio is sent for transcription only when you initiate voice entry and a network connection is available.</li>
           <li>Timeline consolidates symptoms, voice entries, and health events in one view</li>
         </ul>
 
         <h3>Labs, coach &amp; visit prep</h3>
         <ul>
-          <li><strong>Labs:</strong> View trends with reference bands; optional AI deeper explanation consumes Health AI Points</li>
+          <li><strong>Labs:</strong> Enter results manually or view trends with reference bands; optional AI deeper explanation consumes Health AI Points</li>
           <li><strong>Between-visit coach:</strong> Profile or Home &rarr; Coach — weekly goals by disease combination (free)</li>
           <li><strong>Visit prep:</strong> Doctors tab &rarr; Visit Prep; optional AI prep uses points; PDF export on Premium/Family</li>
         </ul>
@@ -353,43 +392,61 @@
         <h3>Notifications not working</h3>
         <ul>
           <li><strong>iOS:</strong> Settings &rarr; ChronicOS &rarr; Notifications &rarr; Allow Notifications</li>
-          <li><strong>Android:</strong> Settings &rarr; Apps &rarr; ChronicOS &rarr; Notifications</li>
           <li>Ensure medication reminders are enabled on each med entry in the App</li>
-          <li>Background refresh, battery optimization, and Do Not Disturb can delay alerts</li>
+          <li>Background refresh, Low Power Mode, Focus / Do Not Disturb, and scheduled Summary can delay alerts</li>
         </ul>
 
         <h3>App crashes or won&rsquo;t open</h3>
         <ul>
-          <li>Update to the latest App Store or Google Play version</li>
+          <li>Update to the latest App Store version</li>
           <li>Restart your device</li>
           <li>Ensure sufficient free storage</li>
-          <li>If persistent, email us with device model, OS version, app version, and what you were doing before the crash</li>
+          <li>On iPad, test both portrait and landscape — ChronicOS is a universal app with adaptive layout</li>
+          <li>If persistent, email us with device model, iOS version, app version, and what you were doing before the crash</li>
         </ul>
       </section>
 
+      <section id="app-review">
+        <h2>5. App Store Review Notes (Version 1.0.0)</h2>
+        <p>The following paths help Apple App Review test core features without special credentials:</p>
+        <ol>
+          <li><strong>Demo mode:</strong> Welcome screen &rarr; <em>View Demo</em> &rarr; complete optional consent &rarr; explore all five tabs.</li>
+          <li><strong>Voice symptom (offline):</strong> Timeline &rarr; Symptoms &rarr; Voice Symptom &rarr; <em>Try demo sample</em> &rarr; Save to Patient Timeline.</li>
+          <li><strong>Subscriptions (Sandbox):</strong> Profile &rarr; Health AI Points / Subscription. Product IDs: <code>com.jchen.ChronicOS.premium.monthly</code>, <code>com.jchen.ChronicOS.family.monthly</code>, <code>com.jchen.ChronicOS.boost.50</code>, <code>com.jchen.ChronicOS.boost.100</code>.</li>
+          <li><strong>Family dashboard:</strong> Requires active Family subscription; otherwise shows plan-required message.</li>
+          <li><strong>Patient Portal Sync:</strong> Profile &rarr; Settings &amp; privacy &rarr; Patient Portal Sync (Beta) — informational Coming Soon cards and optional waitlist only; no live OAuth.</li>
+          <li><strong>Cloud sync (optional):</strong> Profile &rarr; Account &rarr; sign in &rarr; Settings &amp; privacy &rarr; Sync now.</li>
+        </ol>
+        <p class="notice">
+          ChronicOS is a personal health organization tool, not a medical device or emergency service. AI output is informational only.
+        </p>
+      </section>
+
       <section id="billing-support">
-        <h2>5. Billing &amp; Subscription Support</h2>
+        <h2>6. Billing &amp; Subscription Support</h2>
         <p>
-          All payments are processed by <strong>Apple App Store</strong> or <strong>Google Play</strong>. We do not receive or store your full payment card number. For charges, renewals, billing disputes, or refunds:
+          All payments are processed by the <strong>Apple App Store</strong>. We do not receive or store your full payment card number. For charges, renewals, billing disputes, or refunds:
         </p>
         <ul>
           <li><strong>Apple:</strong> <a href="https://reportaproblem.apple.com" rel="noopener noreferrer">reportaproblem.apple.com</a> or Apple Support</li>
-          <li><strong>Google:</strong> Google Play &rarr; Payments &amp; subscriptions &rarr; Help</li>
         </ul>
         <p>
-          Email us at <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Support%20Request">hello@familymedvault.com</a> for help understanding your ChronicOS plan, Health AI Point balance, or entitlement after you have checked your store subscription status.
+          Email us at <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Support%20Request">hello@familymedvault.com</a> for help understanding your ChronicOS plan, Health AI Point balance, or entitlement after you have checked your App Store subscription status.
         </p>
       </section>
 
       <section id="accessibility">
-        <h2>6. Accessibility &amp; Language</h2>
+        <h2>7. Accessibility &amp; Language</h2>
         <p>
-          ChronicOS supports English and Chinese (中文) in-app. Toggle language from the welcome screen or Profile &rarr; Settings. If you encounter accessibility barriers (VoiceOver, Dynamic Type, contrast, or navigation), describe them in your support email and we will consider improvements in future updates.
+          ChronicOS supports English, Chinese (中文), and Spanish (Español) in-app. Cycle language from the welcome screen or Profile &rarr; Settings &amp; privacy. If you encounter accessibility barriers (VoiceOver, Dynamic Type, contrast, or navigation), describe them in your support email and we will consider improvements in future updates.
+        </p>
+        <p>
+          ChronicOS runs on iPhone and iPad (universal app). Layout adapts to larger screens with split columns and adaptive grids.
         </p>
       </section>
 
       <section id="security">
-        <h2>7. Security Reports</h2>
+        <h2>8. Security Reports</h2>
         <p>
           To report a suspected security vulnerability, email
           <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Security%20Report">hello@familymedvault.com</a>
@@ -401,16 +458,17 @@
       </section>
 
       <section id="limitations">
-        <h2>8. Support Scope &amp; Limitations</h2>
+        <h2>9. Support Scope &amp; Limitations</h2>
         <p>
-          Technical support covers app installation, account sign-in, cloud sync, subscriptions, data export/deletion, family profiles, caregiver invitations, and feature questions. We do <strong>not</strong> provide:
+          Technical support covers app installation, account sign-in, cloud sync, subscriptions, data export/deletion, family profiles, caregiver invitations, Patient Portal Sync waitlist questions, and feature questions. We do <strong>not</strong> provide:
         </p>
         <ul>
           <li>Medical advice, diagnosis, treatment recommendations, or interpretation of your labs or symptoms</li>
           <li>Emergency response, telehealth, or on-call clinical services</li>
           <li>Guaranteed data recovery after device loss, factory reset, or uninstall without cloud backup</li>
           <li>Support for modified, jailbroken, sideloaded, or unsupported devices beyond commercially reasonable efforts</li>
-          <li>Integration support for third-party patient portals beyond the App&rsquo;s documented connect flow</li>
+          <li>Live patient portal connection, FHIR troubleshooting, or import of third-party health records in version 1.0.0 — Patient Portal Sync is Beta / Coming Soon only</li>
+          <li>Support for health systems&rsquo; patient portal login issues, password resets, or account access (contact your provider directly)</li>
         </ul>
         <p class="notice">
           ChronicOS is operated by an <strong>individual developer</strong>, not a hospital or HIPAA-covered entity. Support is best-effort and subject to the disclaimers and limitations of liability in our <a href="eula.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy Policy</a>.
@@ -418,12 +476,12 @@
       </section>
 
       <section id="developer-protection">
-        <h2>9. Disclaimer (Individual Developer)</h2>
+        <h2>10. Disclaimer (Individual Developer)</h2>
         <p class="caps">
           TECHNICAL SUPPORT, FAQ CONTENT, AND ANY RESPONSES BY EMAIL ARE PROVIDED FOR CONVENIENCE ONLY ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
         </p>
         <p class="caps">
-          TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR (AN INDIVIDUAL DEVELOPER) SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING FROM OR RELATED TO YOUR USE OF SUPPORT SERVICES OR RELIANCE ON SUPPORT CONTENT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR (AN INDIVIDUAL DEVELOPER) SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING FROM OR RELATED TO YOUR USE OF SUPPORT SERVICES OR RELIANCE ON SUPPORT CONTENT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR AGGREGATE LIABILITY ARISING FROM OR RELATED TO THE APP OR SUPPORT SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS BEFORE THE CLAIM OR (B) FIFTY U.S. DOLLARS (USD $50), EXCEPT WHERE SUCH LIMITATIONS CANNOT BE EXCLUDED UNDER MANDATORY LAW.
         </p>
         <p>
           Nothing in this page limits rights that cannot be waived under mandatory consumer protection laws in your jurisdiction. For full terms, see our <a href="eula.html">Terms of Use</a>.
@@ -431,7 +489,7 @@
       </section>
 
       <section id="emergency">
-        <h2>10. Emergency Resources (U.S.)</h2>
+        <h2>11. Emergency Resources (U.S.)</h2>
         <p class="notice emergency">
           ChronicOS is <strong>not</strong> for emergencies. Do not use the App or email support for urgent medical situations.<br /><br />
           <strong>Life-threatening emergency:</strong> 911<br />
@@ -449,7 +507,7 @@
         <a href="support.html">Technical Support</a>
       </p>
       <p class="notice" style="border: none; padding: 0; margin-top: 12px;">
-        This page satisfies Apple App Store Support URL requirements. It is not legal or medical advice.
+        This page satisfies Apple App Store Support URL requirements for ChronicOS version 1.0.0. It is not legal or medical advice.
       </p>
     </footer>
   </div>
