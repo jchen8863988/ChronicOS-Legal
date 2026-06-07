@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ChronicOS Privacy Policy — how we collect, use, store, and protect your health and account information." />
+  <meta name="description" content="ChronicOS Privacy Policy — how we collect, use, store, and protect your health and account information. Version 1.0.0." />
   <title>ChronicOS Privacy Policy</title>
   <style>
     :root {
@@ -98,6 +98,9 @@
       padding-left: 14px;
       margin-top: 16px;
     }
+    .notice-warn {
+      border-left-color: #b45309;
+    }
     .caps {
       font-size: 0.92rem;
       line-height: 1.55;
@@ -115,9 +118,9 @@
     <header>
       <h1>ChronicOS Privacy Policy</h1>
       <p class="meta">
-        <strong>Effective date:</strong> June 5, 2026<br />
-        <strong>Last updated:</strong> June 5, 2026<br />
-        <strong>Application:</strong> ChronicOS (Bundle ID: com.jchen.ChronicOS) for iOS and Android<br />
+        <strong>Effective date:</strong> June 7, 2026<br />
+        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Operator:</strong> An individual software developer publishing ChronicOS (&ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
     </header>
@@ -129,6 +132,9 @@
           This Privacy Policy describes how ChronicOS (the &ldquo;App&rdquo;) collects, uses, discloses, retains, and protects information when you download, access, or use the App and any optional cloud features. ChronicOS helps adults organize and track multiple chronic conditions, medications, symptoms, labs, appointments, and caregiver collaboration. The App is a <strong>personal health organization and education tool</strong>. It is <strong>not</strong> a medical device, healthcare provider, insurer, or emergency service.
         </p>
         <p>
+          <strong>Version 1.0.0 scope.</strong> At launch, core features include manual health journaling, voice symptom entry (with an offline demo path), appointment preparation with AI assistance, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, and optional cloud sign-in. <strong>Patient Portal Sync</strong> (automatic import from U.S. health systems such as Epic MyChart) is shown in the App as <strong>Beta / Coming Soon</strong> and is <strong>not active</strong> in version 1.0.0. The App does not connect to third-party patient portals or import portal data until a future update announces that feature as available.
+        </p>
+        <p>
           By using the App, you acknowledge this Privacy Policy. If you do not agree, do not use the App. Where required by law, we request your consent before optional processing (for example, anonymous analytics or personalization of coaching tips).
         </p>
       </section>
@@ -136,7 +142,7 @@
       <section id="operator">
         <h2>2. Who We Are (Data Controller)</h2>
         <p>
-          ChronicOS is published and operated by an <strong>individual software developer</strong>, not a hospital, clinic, health plan, or covered entity under HIPAA. We act as the <strong>data controller</strong> for information processed through the App, except where a third party is an independent controller (for example, Apple for App Store billing, Google for Play billing, or your health system for portal data you authorize).
+          ChronicOS is published and operated by an <strong>individual software developer</strong>, not a hospital, clinic, health plan, or covered entity under the U.S. Health Insurance Portability and Accountability Act (HIPAA). We act as the <strong>data controller</strong> for information processed through the App, except where a third party is an independent controller (for example, Apple for App Store billing, Google for Play billing if applicable, or your health system for portal data you may authorize in a future release).
         </p>
         <p>
           <strong>Privacy contact:</strong>
@@ -154,50 +160,70 @@
           <li><strong>Your health data lives primarily on your device.</strong> You can export or delete it in Settings.</li>
           <li><strong>We do not sell</strong> your personal information or health information.</li>
           <li><strong>We do not use your data for third-party advertising</strong> or cross-app tracking for advertising purposes.</li>
-          <li><strong>Many features are free</strong> on-device: symptom diary, medication list, drug-interaction scanning (local rules), rule-based alerts, visit prep, coaching, timelines, and doctor records.</li>
+          <li><strong>Version 1.0.0 focuses on data you enter</strong> (symptoms, meds, labs, vitals, doctors) plus optional AI for visit prep and voice structuring.</li>
+          <li><strong>Patient Portal Sync is Beta / Coming Soon.</strong> We do not pull records from Epic, Cerner, or athenahealth in version 1.0.0. You may optionally join a waitlist with your email.</li>
           <li><strong>Optional cloud sign-in and sync</strong> store encrypted copies on our backend only when you enable them.</li>
           <li><strong>Family profiles</strong> (multiple household members) are stored locally on your device unless you separately enable cloud sync.</li>
           <li><strong>Remote caregiver access</strong> shares data only with people you invite, according to permissions you set, via our authenticated cloud API when both parties use signed-in accounts.</li>
-          <li><strong>Paid subscriptions and Health AI Points</strong> are processed by Apple (and Google Play on Android). We do not receive your full payment card number.</li>
+          <li><strong>Paid subscriptions and Health AI Points</strong> are processed by Apple (and Google Play on Android if offered). We do not receive your full payment card number.</li>
           <li><strong>AI outputs are informational only</strong> and are not medical advice.</li>
         </ul>
       </section>
 
-      <section id="categories">
-        <h2>4. Information We Collect</h2>
+      <section id="portal-beta">
+        <h2>4. Patient Portal Sync (Beta / Coming Soon)</h2>
+        <p>
+          The App includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
+        </p>
+        <ul>
+          <li><strong>No OAuth or FHIR connection is activated.</strong> The App cannot log in to your patient portal or download portal records.</li>
+          <li><strong>No third-party portal credentials</strong> are collected, stored, or transmitted by us in this version.</li>
+          <li><strong>Waitlist (optional):</strong> If you tap &ldquo;Notify Me&rdquo; or &ldquo;Join Waitlist,&rdquo; you may enter an email address. That address is stored <strong>locally on your device</strong> in the waitlist list for that provider. If you choose to open your mail app, a pre-filled message may be sent to <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>; we receive your email only if you send that message or contact us separately.</li>
+          <li><strong>Future releases:</strong> When Patient Portal Sync becomes available, we will update this Policy, request any additional consent required by law, and describe what data is imported and how tokens are secured before connection is enabled.</li>
+        </ul>
+        <p class="notice notice-warn">
+          <strong>App Store disclosure:</strong> For version 1.0.0, Apple App Store privacy labels should <strong>not</strong> indicate collection of health data from third-party sources via patient portal sync, because that feature is not operational at launch.
+        </p>
+      </section>
 
-        <h3>4.1 Information you provide directly</h3>
+      <section id="categories">
+        <h2>5. Information We Collect</h2>
+
+        <h3>5.1 Information you provide directly</h3>
         <ul>
           <li>Profile and display preferences; <strong>active chronic condition</strong> selections</li>
-          <li><strong>Health and wellness data</strong> you enter or import: symptoms (including pain, fatigue, mood, activity, diet notes), medications (prescription, OTC, supplements), side-effect diary, allergies, lab results, vital signs (e.g., blood pressure, glucose, weight, eGFR, A1c), doctor and visit records, appointment preparation notes, and unified timeline entries</li>
+          <li><strong>Health and wellness data</strong> you enter manually: symptoms (including pain, fatigue, mood, activity, diet notes), medications (prescription, OTC, supplements), side-effect diary, allergies, lab results, vital signs (e.g., blood pressure, glucose, weight, eGFR, A1c), doctor and visit records, appointment preparation notes, and unified timeline entries</li>
           <li><strong>Household / family member names</strong> when you use multi-patient profiles on a shared device (local storage per patient profile)</li>
           <li><strong>Caregiver collaboration data</strong>: invitee email, relationship label, permission level (full access, medication only, or appointment access), invite tokens, and observations a caregiver logs on your behalf</li>
           <li><strong>Account information</strong> if you sign in for cloud sync: email address, authentication tokens (stored securely on device), and optional display name from your identity provider</li>
           <li><strong>Consent choices</strong> at first launch: optional anonymous analytics, optional personalization of coaching tips, and region selection (United States or EEA/GDPR-oriented practices)</li>
-          <li>Voice recordings you choose to submit for symptom transcription (processed only when you initiate voice entry and a network connection is available)</li>
+          <li><strong>Voice recordings</strong> you choose to submit for symptom transcription (processed only when you initiate voice entry and a network connection is available; a demo path uses sample text without uploading audio)</li>
+          <li><strong>Patient Portal Sync waitlist email</strong> (optional): stored on your device if you join the waitlist; received by us only if you email us</li>
           <li>Communications you send to support</li>
         </ul>
 
-        <h3>4.2 Information collected automatically</h3>
+        <h3>5.2 Information collected automatically</h3>
         <ul>
-          <li>App preferences: language (English/Chinese), theme, notification settings, configured backend URL (if you enter one in debug/account settings)</li>
+          <li>App preferences: language (English, Chinese, Spanish), theme, notification settings</li>
           <li>Device and app technical data needed to operate the App: operating system version, app version, general device type</li>
           <li><strong>Push notification device tokens</strong> if you allow notifications (for medication reminders and visit-prep alerts)</li>
           <li><strong>Anonymous usage analytics</strong> only if you <strong>opt in</strong> on the consent screen</li>
           <li>Crash or diagnostic logs as permitted by your device settings and platform policies</li>
         </ul>
 
-        <h3>4.3 Information from third parties (only if you connect or purchase)</h3>
+        <h3>5.3 Information from third parties (only if you connect or purchase)</h3>
         <ul>
           <li><strong>Apple App Store / Google Play:</strong> subscription status, product identifiers, transaction/receipt identifiers for validation (we do not receive your full payment card number)</li>
           <li><strong>Authentication providers</strong> (email/password, Google, or Apple Sign In if enabled): basic account identifiers per their policies</li>
-          <li><strong>Patient portal / FHIR</strong> (optional): health records you authorize from your health system (e.g., Epic MyChart)</li>
+          <li><strong>Patient portal / FHIR:</strong> <em>Not collected in version 1.0.0.</em> In a future release, if you connect a patient portal, we may receive health records you authorize from your health system (for example, Epic MyChart). Their privacy policies will also apply.</li>
           <li><strong>RxNorm / open drug databases</strong> (optional remote lookup during medication safety scan): drug identifiers you submit for interaction checking</li>
-          <li><strong>AI and speech service providers</strong> (only when you use paid AI features or voice transcription): the minimum text or audio needed to fulfill your request</li>
+          <li><strong>AI and speech service providers</strong> (only when you use paid AI features or live voice transcription): the minimum text or audio needed to fulfill your request</li>
         </ul>
 
-        <h3>4.4 What we do not collect by design</h3>
+        <h3>5.4 What we do not collect by design (version 1.0.0)</h3>
         <ul>
+          <li>Patient portal login credentials or FHIR OAuth tokens (portal sync not active)</li>
+          <li>Health records imported automatically from hospitals or insurers (until Patient Portal Sync launches)</li>
           <li>Social Security numbers, insurance member IDs, or government IDs (not required for core use)</li>
           <li>Data for behavioral advertising or ad-network profiling</li>
           <li>Precise real-time location tracking for marketing</li>
@@ -207,13 +233,13 @@
       </section>
 
       <section id="app-store-table">
-        <h2>5. App Store Privacy Label Alignment</h2>
-        <p>The following table supports Apple App Store privacy nutrition labels and Google Play Data safety disclosures.</p>
+        <h2>6. App Store Privacy Label Alignment (Version 1.0.0)</h2>
+        <p>The following table supports Apple App Store privacy nutrition labels and Google Play Data safety disclosures for the current release.</p>
         <table>
           <thead>
             <tr>
               <th>Category</th>
-              <th>Examples in ChronicOS</th>
+              <th>Examples in ChronicOS 1.0.0</th>
               <th>Linked to you?</th>
               <th>Used for tracking?</th>
             </tr>
@@ -221,7 +247,7 @@
           <tbody>
             <tr>
               <td>Health &amp; fitness</td>
-              <td>Symptoms, meds, labs, vitals, conditions, coaching, alerts</td>
+              <td>Symptoms, meds, labs, vitals, conditions, coaching, alerts (data you enter)</td>
               <td>Yes</td>
               <td>No</td>
             </tr>
@@ -239,7 +265,7 @@
             </tr>
             <tr>
               <td>Contact info</td>
-              <td>Email (account or caregiver invite)</td>
+              <td>Email (account, caregiver invite, or waitlist if you email us)</td>
               <td>Yes</td>
               <td>No</td>
             </tr>
@@ -263,20 +289,22 @@
             </tr>
             <tr>
               <td>Audio</td>
-              <td>Voice symptom recordings you submit</td>
+              <td>Voice symptom recordings you submit for live transcription</td>
               <td>Yes</td>
               <td>No</td>
             </tr>
           </tbody>
         </table>
+        <p><strong>Not collected at launch:</strong> Health data obtained from third-party patient portals (Epic MyChart, Cerner, athenahealth, or other FHIR sources) because Patient Portal Sync is not enabled in version 1.0.0.</p>
         <p><strong>Tracking:</strong> We do not track you across other companies&rsquo; apps or websites for advertising. We do not use the App Tracking Transparency framework for ad targeting because we do not engage in cross-app advertising tracking.</p>
       </section>
 
       <section id="purposes">
-        <h2>6. How We Use Information</h2>
+        <h2>7. How We Use Information</h2>
         <p>We use information only for purposes compatible with operating the App:</p>
         <ul>
-          <li>Provide core features: multi-condition dashboard, symptom diary (text and voice), medication list and safety scanning, lab trends with clinical reference bands, visit preparation, between-visit coaching, rule-based alerts, PDF export, doctor records, and patient timeline</li>
+          <li>Provide core features: multi-condition dashboard, manual symptom diary, voice symptom entry, medication list and safety scanning, lab trends, visit preparation and AI-assisted summaries, between-visit coaching, rule-based alerts, exports, doctor records, and patient timeline</li>
+          <li>Display Patient Portal Sync (Beta) information and process voluntary waitlist sign-ups stored on your device</li>
           <li>Support <strong>household switching</strong> among local patient profiles on your device</li>
           <li>Operate <strong>optional AI-assisted features</strong> that may consume Health AI Points (appointment prep, provider summaries, lab interpretation, voice structuring, longitudinal analysis, medication interaction explanations)</li>
           <li>Process <strong>auto-renewable subscriptions</strong> and consumable Health AI Point packs through platform billing</li>
@@ -285,32 +313,32 @@
           <li>Deliver <strong>local push notifications</strong> (medication reminders, visit prep) if you grant permission</li>
           <li>Personalize coaching tips <strong>only if you opt in</strong> to personalization</li>
           <li>Maintain security, prevent abuse, debug issues, and comply with law</li>
-          <li>Respond to support, privacy, and security reports</li>
+          <li>Respond to support, privacy, security reports, and waitlist inquiries you send by email</li>
         </ul>
         <p><strong>We do not sell, rent, or share your information for third-party advertising.</strong></p>
       </section>
 
       <section id="legal-bases">
-        <h2>7. Legal Bases (EEA, UK, and Similar Jurisdictions)</h2>
+        <h2>8. Legal Bases (EEA, UK, and Similar Jurisdictions)</h2>
         <p>If you select an EEA/GDPR-oriented region on the consent screen, we process personal data on these bases:</p>
         <ul>
-          <li><strong>Consent</strong> — optional analytics, optional personalization, optional cloud features, optional FHIR connection, optional voice/AI processing</li>
+          <li><strong>Consent</strong> — optional analytics, optional personalization, optional cloud features, optional voice/AI processing, and (when available in a future release) optional patient portal connection</li>
           <li><strong>Contract</strong> — providing features you request, including paid subscriptions and point-based AI features</li>
-          <li><strong>Legitimate interests</strong> — securing the App, preventing fraud and abuse, and improving reliability (balanced against your rights)</li>
+          <li><strong>Legitimate interests</strong> — securing the App, operating a voluntary waitlist you initiate, preventing fraud and abuse, and improving reliability (balanced against your rights)</li>
           <li><strong>Legal obligation</strong> — where applicable law requires retention or disclosure</li>
         </ul>
         <p>You may withdraw consent for optional processing in Settings or by emailing us. Withdrawal does not affect the lawfulness of processing before withdrawal.</p>
       </section>
 
       <section id="sharing">
-        <h2>8. When We Disclose Information</h2>
+        <h2>9. When We Disclose Information</h2>
         <p>We disclose information only as described below:</p>
         <ul>
-          <li><strong>Service providers (processors)</strong> under confidentiality and security obligations — see Section 9</li>
+          <li><strong>Service providers (processors)</strong> under confidentiality and security obligations — see Section 10</li>
           <li><strong>Caregivers you invite</strong>, limited to the permission tier you assign, when remote caregiver features are used with authenticated accounts</li>
           <li><strong>Apple and Google</strong> for payment, subscription management, and receipt validation</li>
-          <li><strong>Health systems you authorize</strong> when you connect FHIR or patient-portal import (data flows from them to you; we do not sell it onward)</li>
-          <li><strong>When you export or share</strong> PDFs, JSON exports, or other files from the App</li>
+          <li><strong>Health systems you authorize</strong> — only in a future release when Patient Portal Sync is enabled (data flows from them to you; we do not sell it onward)</li>
+          <li><strong>When you export or share</strong> visit summaries, JSON exports, medication lists, or other files from the App</li>
           <li><strong>Legal requirements</strong> — valid legal process, or to protect the rights, safety, and security of users, the Operator, or the public</li>
           <li><strong>Business transfer</strong> — if the App or related assets are acquired, merged, or sold, subject to notice where required by law (the Operator is currently an individual developer)</li>
         </ul>
@@ -318,7 +346,7 @@
       </section>
 
       <section id="subprocessors">
-        <h2>9. Service Providers and Subprocessors</h2>
+        <h2>10. Service Providers and Subprocessors</h2>
         <p>When you use optional cloud, AI, or voice features, we may use the following categories of providers. Each is engaged for specific functions and is contractually or terms-bound to protect data:</p>
         <table>
           <thead>
@@ -356,28 +384,30 @@
             </tr>
           </tbody>
         </table>
-        <p>We may update providers as the App evolves. Material changes to subprocessors will be reflected in this Policy.</p>
+        <p>Patient portal / FHIR providers (for example, Epic) are <strong>not</strong> subprocessors in version 1.0.0 because portal sync is not active. We may update this table when Patient Portal Sync launches.</p>
       </section>
 
       <section id="storage">
-        <h2>10. Storage, Encryption, Location, and Retention</h2>
+        <h2>11. Storage, Encryption, Location, and Retention</h2>
 
-        <h3>10.1 On-device storage</h3>
+        <h3>11.1 On-device storage</h3>
         <p>
-          Most health records are stored locally on your phone or tablet. Patient-scoped data for household members is kept in separate local namespaces on the same device. You may <strong>export</strong> data as JSON and <strong>delete all data</strong> from Profile &rarr; Settings. Local deletion is permanent for that device&rsquo;s copy.
+          Most health records are stored locally on your phone or tablet. Patient-scoped data for household members is kept in separate local namespaces on the same device. Patient Portal Sync waitlist entries (if any) are stored locally until you delete App data or uninstall. You may <strong>export</strong> data as JSON and <strong>delete all data</strong> from Profile &rarr; Settings. Local deletion is permanent for that device&rsquo;s copy.
         </p>
 
-        <h3>10.2 Cloud storage and encryption</h3>
+        <h3>11.2 Cloud storage and encryption</h3>
         <p>
-          If you sign in and use &ldquo;Sync to Postgres&rdquo; or remote caregiver features, health payloads are transmitted over <strong>HTTPS (TLS)</strong> and stored in our database using <strong>application-layer encryption (AES-256-GCM envelope encryption)</strong> for designated health fields. Authentication tokens and sensitive configuration may use the device secure enclave / Keychain on iOS.
+          If you sign in and use cloud sync or remote caregiver features, health payloads are transmitted over <strong>HTTPS (TLS)</strong> and stored in our database using <strong>application-layer encryption (AES-256-GCM envelope encryption)</strong> for designated health fields. Authentication tokens and sensitive configuration use the device secure enclave / Keychain on iOS where supported.
         </p>
         <p>
           Cloud servers may be located in the <strong>United States</strong> or other regions where our infrastructure providers operate.
         </p>
 
-        <h3>10.3 Retention</h3>
+        <h3>11.3 Retention</h3>
         <ul>
           <li><strong>Local data:</strong> until you delete it or uninstall the App</li>
+          <li><strong>Waitlist emails (device):</strong> until you delete all App data or uninstall</li>
+          <li><strong>Waitlist emails (received by us):</strong> until your request is fulfilled or no longer needed, unless longer retention is required by law</li>
           <li><strong>Cloud data:</strong> until you delete your account or data, or until no longer needed to provide the service</li>
           <li><strong>Caregiver invites:</strong> until accepted, revoked, expired, or deleted</li>
           <li><strong>Support emails:</strong> as long as needed to resolve your request and meet legal obligations</li>
@@ -387,7 +417,7 @@
       </section>
 
       <section id="security">
-        <h2>11. Security</h2>
+        <h2>12. Security</h2>
         <p>
           We implement reasonable administrative, technical, and organizational measures appropriate to the sensitivity of health-related data, including encryption in transit, encrypted cloud payloads, access controls, and authenticated APIs for caregiver access. However, <strong>no system is perfectly secure</strong>. You are responsible for securing your device (passcode, biometrics), keeping credentials confidential, and choosing caregivers you trust.
         </p>
@@ -398,21 +428,21 @@
       </section>
 
       <section id="permissions">
-        <h2>12. Device Permissions</h2>
+        <h2>13. Device Permissions</h2>
         <ul>
-          <li><strong>Microphone</strong> — only when you use voice symptom entry; recordings are used for transcription you request</li>
+          <li><strong>Microphone</strong> — only when you use live voice symptom entry; recordings are used for transcription you request (demo mode uses sample text without uploading audio)</li>
           <li><strong>Notifications</strong> — only if you enable medication reminders or visit-prep alerts</li>
-          <li><strong>Network</strong> — required for cloud sync, caregiver remote access, optional AI, optional FHIR, and optional drug-database lookups</li>
+          <li><strong>Network</strong> — required for optional cloud sync, caregiver remote access, optional AI, live voice transcription, and optional drug-database lookups; <strong>not</strong> required for Patient Portal Sync in version 1.0.0 because that feature is not active</li>
         </ul>
         <p>You may deny permissions; related features will not function, but core on-device tracking may still work offline.</p>
       </section>
 
       <section id="rights">
-        <h2>13. Your Rights and Choices</h2>
+        <h2>14. Your Rights and Choices</h2>
         <p>Depending on your location, you may have the following rights:</p>
         <ul>
           <li><strong>Access / portability</strong> — export JSON from Settings</li>
-          <li><strong>Deletion</strong> — delete all local data from Settings; request cloud deletion by email</li>
+          <li><strong>Deletion</strong> — delete all local data from Settings (including waitlist entries stored on device); request cloud deletion by email</li>
           <li><strong>Correction</strong> — edit entries directly in the App</li>
           <li><strong>Opt out</strong> — decline optional analytics and personalization on the consent screen</li>
           <li><strong>Restrict or object</strong> — EEA/UK users may object to certain processing</li>
@@ -420,60 +450,60 @@
           <li><strong>Complaint</strong> — lodge a complaint with your supervisory authority (EEA/UK)</li>
         </ul>
 
-        <h3>13.1 California (CPRA/CCPA)</h3>
+        <h3>14.1 California (CPRA/CCPA)</h3>
         <p>
           California residents have rights to know, delete, and correct personal information, and to opt out of sale or sharing for cross-context behavioral advertising. <strong>We do not sell or share personal information for cross-context behavioral advertising.</strong> Submit requests to
           <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Privacy%20Request">hello@familymedvault.com</a>. We will verify requests as required by law. You may designate an authorized agent where applicable.
         </p>
 
-        <h3>13.2 Apple subscriptions</h3>
+        <h3>14.2 Apple subscriptions</h3>
         <p>
           Manage or cancel auto-renewable subscriptions in <strong>Settings &rarr; Apple ID &rarr; Subscriptions</strong> on iOS. Deleting the App does not cancel an active subscription. Refunds are handled under Apple&rsquo;s policies.
         </p>
       </section>
 
       <section id="children">
-        <h2>14. Children</h2>
+        <h2>15. Children</h2>
         <p>
           ChronicOS is intended for adults managing their own or family members&rsquo; health information and is <strong>not directed to children under 13</strong> (or under 16 in certain jurisdictions). We do not knowingly collect personal information from children. If you believe a child provided information without appropriate consent, contact us and we will delete it promptly.
         </p>
       </section>
 
       <section id="international">
-        <h2>15. International Transfers</h2>
+        <h2>16. International Transfers</h2>
         <p>
           If you access the App from outside the United States, your information may be processed in the U.S. and other countries with different data-protection laws. Where required for transfers from the EEA, UK, or Switzerland, we rely on appropriate safeguards such as Standard Contractual Clauses or equivalent mechanisms.
         </p>
       </section>
 
       <section id="third-party">
-        <h2>16. Third-Party Services and Links</h2>
+        <h2>17. Third-Party Services and Links</h2>
         <p>
-          The App may link to patient portals, legal pages, or third-party sites. Their privacy practices govern those services. Review their policies before connecting accounts or sharing credentials. We are not responsible for third-party outages, security incidents, or policy changes outside our control.
+          The App may link to legal pages, your device&rsquo;s mail client for waitlist messages, or third-party sites. Third-party privacy practices govern those services. When Patient Portal Sync becomes available, review your health system&rsquo;s policies before connecting a portal. We are not responsible for third-party outages, security incidents, or policy changes outside our control.
         </p>
       </section>
 
       <section id="changes">
-        <h2>17. Changes to This Policy</h2>
+        <h2>18. Changes to This Policy</h2>
         <p>
-          We may update this Privacy Policy from time to time. We will post the revised version at this URL with an updated &ldquo;Last updated&rdquo; date. For material changes, we may provide additional notice in the App or by email where appropriate. Continued use after the effective date constitutes acceptance of the updated Policy, except where law requires additional consent.
+          We may update this Privacy Policy from time to time, including when we enable Patient Portal Sync or add subprocessors. We will post the revised version at this URL with an updated &ldquo;Last updated&rdquo; date. For material changes, we may provide additional notice in the App or by email where appropriate. Continued use after the effective date constitutes acceptance of the updated Policy, except where law requires additional consent.
         </p>
       </section>
 
       <section id="medical">
-        <h2>18. Not Medical Advice; Emergency Disclaimer</h2>
+        <h2>19. Not Medical Advice; Emergency Disclaimer</h2>
         <p>
           ChronicOS provides educational and organizational tools only. Content, alerts, coaching tips, clinical reference bands on charts, AI summaries, and lab narratives are <strong>not</strong> medical advice, diagnosis, or treatment. Always consult qualified clinicians for medical decisions. In an emergency, call <strong>911</strong> (U.S.) or your local emergency number immediately. Do not rely on the App for emergency monitoring.
         </p>
       </section>
 
       <section id="developer-protection">
-        <h2>19. Individual Developer; Disclaimer; Limitation of Liability</h2>
+        <h2>20. Individual Developer; Disclaimer; Limitation of Liability</h2>
         <p class="caps">
           THE APP AND ALL RELATED SERVICES ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
         </p>
         <p class="caps">
-          TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR (AN INDIVIDUAL DEVELOPER) SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, GOODWILL, OR HEALTH OUTCOMES, ARISING FROM OR RELATED TO THIS PRIVACY POLICY OR YOUR USE OF THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+          TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR (AN INDIVIDUAL SOFTWARE DEVELOPER) SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, GOODWILL, OR HEALTH OUTCOMES, ARISING FROM OR RELATED TO THIS PRIVACY POLICY OR YOUR USE OF THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
         </p>
         <p class="caps">
           TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR&rsquo;S TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE APP OR THIS PRIVACY POLICY SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS YOU PAID TO THE OPERATOR FOR THE APP OR IN-APP PURCHASES IN THE TWELVE (12) MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM, OR (B) FIFTY U.S. DOLLARS (USD $50.00).
@@ -482,20 +512,20 @@
           Nothing in this Policy limits rights that cannot be waived under mandatory consumer protection, privacy, or health laws in your jurisdiction (including certain GDPR/EEA rights). Some jurisdictions do not allow certain disclaimers or limitations; in those cases, our liability is limited to the maximum extent permitted by law.
         </p>
         <p>
-          You agree to use the App at your own risk and to maintain independent backups of information you consider important.
+          You agree to use the App at your own risk and to maintain independent backups of information you consider important. The Operator is a sole individual developer; you acknowledge that support, incident response, and legal resources may be more limited than those of a large company, and you should not rely on the App as your only record of critical health information.
         </p>
       </section>
 
       <section id="governing-law">
-        <h2>20. Governing Law</h2>
+        <h2>21. Governing Law</h2>
         <p>
           This Privacy Policy is governed by the laws of the <strong>United States</strong> and the State of <strong>California</strong>, without regard to conflict-of-law principles, except where mandatory consumer or privacy laws in your country of residence provide otherwise.
         </p>
       </section>
 
       <section id="contact">
-        <h2>21. Contact Us</h2>
-        <p>For privacy questions, data subject requests, or security reports:</p>
+        <h2>22. Contact Us</h2>
+        <p>For privacy questions, data subject requests, Patient Portal Sync waitlist, or security reports:</p>
         <p>
           <strong>Email:</strong> <a href="mailto:hello@familymedvault.com?subject=ChronicOS%20Privacy%20Request">hello@familymedvault.com</a><br />
           <strong>Subject line:</strong> ChronicOS Privacy Request
