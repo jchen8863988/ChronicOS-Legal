@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ChronicOS Technical Support — contact, FAQ, subscriptions, Patient Portal Sync (Beta), cloud sync, and troubleshooting. Version 1.0.0." />
+  <meta name="description" content="ChronicOS Technical Support — contact, FAQ, subscriptions, Patient Portal (Coming Soon), cloud sync, and troubleshooting. Version 1.0.0." />
   <title>ChronicOS Technical Support</title>
   <style>
     :root {
@@ -139,8 +139,8 @@
     <header>
       <h1>ChronicOS Technical Support</h1>
       <p class="meta">
-        <strong>Effective date:</strong> June 7, 2026<br />
-        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Effective date:</strong> May 28, 2026<br />
+        <strong>Last updated:</strong> May 28, 2026<br />
         <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Operator:</strong> An individual software developer publishing ChronicOS (&ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
@@ -205,14 +205,15 @@
         <ul>
           <li>Manual entry of symptoms, medications, labs, vitals, and doctor visits</li>
           <li>Voice symptom entry (live transcription when signed in, or offline <em>Try demo sample</em> path)</li>
-          <li>AI-assisted appointment preparation and related optional AI features (uses Health AI Points)</li>
+          <li>On-device visit preparation, lab narratives, medication interaction explanations, correlation analysis, and Health Coach (free — no Health AI Points)</li>
+          <li>Optional cloud AI through OpenAI (specialist summaries, trend orchestration, voice structuring, memory embeddings) — consumes Health AI Points only when cloud processing runs</li>
           <li>Rule-based alerts, on-device medication interaction scanning, between-visit Health Coach</li>
           <li>Demo mode (<em>View Demo</em> on welcome screen) with local sample data</li>
           <li>Optional cloud sign-in, backup/sync, family profiles, and remote caregiver collaboration</li>
         </ul>
         <p><strong>What is not active in version 1.0.0:</strong></p>
         <ul>
-          <li><strong>Patient Portal Sync</strong> — automatic import from Epic MyChart, Cerner / Oracle Health, or athenahealth is shown as <strong>Beta / Coming Soon</strong> only. No OAuth, FHIR connection, or portal login is available at launch.</li>
+          <li><strong>Patient Portal (Coming Soon)</strong> — automatic import from Epic MyChart, Cerner / Oracle Health, or athenahealth is shown in-app only. No OAuth, FHIR connection, or portal login is available at launch.</li>
         </ul>
         <p class="notice">
           ChronicOS is <strong>not</strong> a medical device, healthcare provider, insurer, or emergency service. Alerts, coaching tips, chart reference lines, and AI outputs are informational only and are not medical advice.
@@ -230,12 +231,12 @@
           <li><strong>Language:</strong> English, 中文, or Español — toggle from the welcome screen or Profile &rarr; Settings &amp; privacy.</li>
         </ul>
 
-        <h3>Patient Portal Sync (Beta / Coming Soon)</h3>
+        <h3>Patient Portal (Coming Soon)</h3>
         <p>
-          Version 1.0.0 includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems. This feature is <strong>not operational</strong> at launch.
+          Version 1.0.0 includes a <strong>Patient Portal (Coming Soon)</strong> screen describing planned integrations with major U.S. electronic health record systems. This feature is <strong>not operational</strong> at launch.
         </p>
         <ul>
-          <li><strong>Where to find it:</strong> Profile &rarr; Settings &amp; privacy &rarr; <em>Patient Portal Sync (Beta)</em></li>
+          <li><strong>Where to find it:</strong> Profile &rarr; Settings &amp; privacy &rarr; <em>Patient Portal (Coming Soon)</em></li>
           <li><strong>What you will see:</strong> Cards for Epic MyChart (Coming Soon, Expected 2026), Cerner / Oracle Health, and athenahealth — each marked <em>Coming Soon</em></li>
           <li><strong>No portal login in v1.0.0:</strong> The App cannot connect to your patient portal, collect portal credentials, or download FHIR records in this version.</li>
           <li><strong>Join the waitlist (optional):</strong> Tap <em>Notify Me</em> (Epic) or <em>Join Waitlist</em> (Cerner / athenahealth). Enter your email — it is stored <strong>locally on your device</strong>. You may optionally open your mail app to send a pre-filled message to <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>; we receive your email only if you send that message or contact us separately.</li>
@@ -261,6 +262,18 @@
               <td>Included</td>
               <td>Included</td>
               <td>Included</td>
+            </tr>
+            <tr>
+              <td>On-device AI (visit prep, lab narratives, med explanations, correlation, coach)</td>
+              <td>Free</td>
+              <td>Free</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Cloud OpenAI features (specialist summary, orchestration, voice LLM, embeddings)</td>
+              <td>Uses ~20 pts/mo</td>
+              <td>Uses ~200 pts/mo</td>
+              <td>Uses ~500 pts/mo</td>
             </tr>
             <tr>
               <td>Active conditions &amp; doctors</td>
@@ -307,7 +320,7 @@
           <li><strong>Premium</strong> (~$14.99/month, auto-renewable): ~200 Health AI Points/month — Product ID <code>com.jchen.ChronicOS.premium.monthly</code></li>
           <li><strong>Family</strong> (~$29.99/month, auto-renewable): ~500 points/month + family &amp; caregiver features — <code>com.jchen.ChronicOS.family.monthly</code></li>
           <li><strong>AI Boost Packs</strong> (one-time consumables): 50 points (<code>com.jchen.ChronicOS.boost.50</code>, ~$4.99) or 100 points (<code>com.jchen.ChronicOS.boost.100</code>, ~$7.99)</li>
-          <li><strong>What points are used for:</strong> AI appointment prep, provider summaries, lab interpretation, voice structuring, longitudinal analysis, medication interaction explanations, and similar optional AI features</li>
+          <li><strong>What points are used for (cloud OpenAI only):</strong> Specialist/provider summaries (~5), full trend orchestration (~5), live voice symptom structuring when LLM extraction runs (~1), and OpenAI embedding-based memory indexing (~5). <strong>Not charged:</strong> visit prep, lab narratives, med interaction explanations, correlation, Health Coach, medication scan, or PDF export</li>
           <li><strong>Manage or cancel (iOS):</strong> Settings &rarr; Apple ID &rarr; Subscriptions &rarr; ChronicOS</li>
           <li><strong>Restore purchases:</strong> Profile &rarr; Health AI Points / Subscription &rarr; Restore Purchases (if shown)</li>
           <li><strong>Refunds:</strong> Request through Apple first; we cannot override App Store refund decisions</li>
@@ -384,9 +397,9 @@
 
         <h3>Labs, coach &amp; visit prep</h3>
         <ul>
-          <li><strong>Labs:</strong> Enter results manually or view trends with reference bands; optional AI deeper explanation consumes Health AI Points</li>
+          <li><strong>Labs:</strong> Enter results manually or view trends with reference bands; expanded explanations run on-device and are <strong>free</strong> (no Health AI Points)</li>
           <li><strong>Between-visit coach:</strong> Profile or Home &rarr; Coach — weekly goals by disease combination (free)</li>
-          <li><strong>Visit prep:</strong> Doctors tab &rarr; Visit Prep; optional AI prep uses points; PDF export on Premium/Family</li>
+          <li><strong>Visit prep:</strong> Doctors tab &rarr; Visit Prep — rule-based preparation is <strong>free</strong>; PDF export on Premium/Family</li>
         </ul>
 
         <h3>Notifications not working</h3>
@@ -414,7 +427,7 @@
           <li><strong>Voice symptom (offline):</strong> Timeline &rarr; Symptoms &rarr; Voice Symptom &rarr; <em>Try demo sample</em> &rarr; Save to Patient Timeline.</li>
           <li><strong>Subscriptions (Sandbox):</strong> Profile &rarr; Health AI Points / Subscription. Product IDs: <code>com.jchen.ChronicOS.premium.monthly</code>, <code>com.jchen.ChronicOS.family.monthly</code>, <code>com.jchen.ChronicOS.boost.50</code>, <code>com.jchen.ChronicOS.boost.100</code>.</li>
           <li><strong>Family dashboard:</strong> Requires active Family subscription; otherwise shows plan-required message.</li>
-          <li><strong>Patient Portal Sync:</strong> Profile &rarr; Settings &amp; privacy &rarr; Patient Portal Sync (Beta) — informational Coming Soon cards and optional waitlist only; no live OAuth.</li>
+          <li><strong>Patient Portal (Coming Soon):</strong> Profile &rarr; Settings &amp; privacy &rarr; Patient Portal (Coming Soon) — informational Coming Soon cards and optional waitlist only; no live OAuth.</li>
           <li><strong>Cloud sync (optional):</strong> Profile &rarr; Account &rarr; sign in &rarr; Settings &amp; privacy &rarr; Sync now.</li>
         </ol>
         <p class="notice">
@@ -467,7 +480,7 @@
           <li>Emergency response, telehealth, or on-call clinical services</li>
           <li>Guaranteed data recovery after device loss, factory reset, or uninstall without cloud backup</li>
           <li>Support for modified, jailbroken, sideloaded, or unsupported devices beyond commercially reasonable efforts</li>
-          <li>Live patient portal connection, FHIR troubleshooting, or import of third-party health records in version 1.0.0 — Patient Portal Sync is Beta / Coming Soon only</li>
+          <li>Live patient portal connection, FHIR troubleshooting, or import of third-party health records in version 1.0.0 — Patient Portal (Coming Soon) is not operational at launch</li>
           <li>Support for health systems&rsquo; patient portal login issues, password resets, or account access (contact your provider directly)</li>
         </ul>
         <p class="notice">
