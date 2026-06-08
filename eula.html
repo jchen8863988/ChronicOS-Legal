@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ChronicOS Terms of Use (EULA) — license, subscriptions, AI features, Patient Portal Sync (Beta), and user responsibilities. Version 1.0.0." />
+  <meta name="description" content="ChronicOS Terms of Use (EULA) — license, subscriptions, OpenAI cloud AI, Patient Portal (Coming Soon), and user responsibilities. Version 1.0.0." />
   <title>ChronicOS Terms of Use (EULA)</title>
   <style>
     :root {
@@ -126,8 +126,8 @@
       <h1>ChronicOS Terms of Use</h1>
       <p class="meta">
         <strong>End User License Agreement (EULA)</strong><br />
-        <strong>Effective date:</strong> June 7, 2026<br />
-        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Effective date:</strong> May 28, 2026<br />
+        <strong>Last updated:</strong> May 28, 2026<br />
         <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Licensor:</strong> An individual software developer publishing ChronicOS (&ldquo;Developer,&rdquo; &ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
@@ -144,7 +144,7 @@
           If you do not agree, do not use the App. If you use the App on behalf of another person (for example, as a family caregiver), you represent that you have authority to bind that person to these Terms and that you may lawfully manage or share their health information as you configure in the App.
         </p>
         <p>
-          <strong>Version 1.0.0 scope.</strong> At launch, the App provides manual health journaling, voice symptom entry (including an offline demo path), AI-assisted appointment preparation, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, optional cloud sign-in, and optional family and caregiver features. <strong>Patient Portal Sync</strong> (automatic import from U.S. health systems such as Epic MyChart) is displayed as <strong>Beta / Coming Soon</strong> and is <strong>not active</strong> in version 1.0.0.
+          <strong>Version 1.0.0 scope.</strong> At launch, the App provides manual health journaling, voice symptom entry (including an offline demo path), on-device rule-based visit preparation, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, optional cloud sign-in, and optional family and caregiver features. Optional <strong>cloud AI through OpenAI</strong> (text generation and embeddings) consumes Health AI Points only when that cloud processing runs. <strong>Patient Portal (Coming Soon)</strong> (automatic import from U.S. health systems such as Epic MyChart) is displayed in the App and is <strong>not active</strong> in version 1.0.0.
         </p>
         <p class="notice">
           Where required by law, we request your consent before optional processing (for example, anonymous analytics, personalization, cloud sync, live voice transcription, or AI features), as described in the Privacy Policy and in-app consent screens.
@@ -196,16 +196,17 @@
           <li>Symptom and flare tracking (text and optional voice entry, including offline demo sample)</li>
           <li>Unified health timeline</li>
           <li>Medication list, local interaction / safety scanning, reminders, and side-effect diary</li>
-          <li>Doctor and visit records; visit preparation tools</li>
+          <li>Doctor and visit records; on-device visit preparation (rule-based, free)</li>
+          <li>Lab trend narratives, medication interaction explanations, and correlation insights (on-device, free)</li>
           <li>Between-visit Health Coach (weekly goals by disease combination)</li>
           <li>Rule-based health and medication safety alerts</li>
           <li>Demo mode (<em>View Demo</em> on the welcome screen) with local sample data</li>
-          <li>Basic monthly Health AI Points allowance on the free tier (approximately 20 points, as displayed in-app)</li>
+          <li>Basic monthly Health AI Points allowance on the free tier (approximately 20 points, as displayed in-app) for optional cloud OpenAI features</li>
         </ul>
 
         <h3>4.2 Premium and Family subscriptions</h3>
         <p>
-          Optional <strong>auto-renewable subscriptions</strong> unlock expanded capabilities and higher monthly Health AI Points allowances, including AI appointment preparation, provider summaries, lab AI interpretation, voice symptom structuring, longitudinal analysis, medication interaction explanations, and related premium features as described in-app.
+          Optional <strong>auto-renewable subscriptions</strong> unlock expanded entitlements and higher monthly Health AI Points allowances for <strong>optional cloud AI through OpenAI</strong> — for example specialist/provider summaries, full trend orchestration, cloud voice symptom structuring, and OpenAI embedding-based memory indexing. Subscriptions do <strong>not</strong> charge Health AI Points for on-device rule engines such as visit prep, lab narratives, medication interaction explanations, correlation analysis, or Health Coach.
         </p>
         <table>
           <thead>
@@ -246,7 +247,7 @@
           <li>100 points — <code>com.jchen.ChronicOS.boost.100</code> (typically $7.99)</li>
         </ul>
         <p>
-          Health AI Points are virtual credits for optional AI features only. They have no cash value, are non-transferable, and do not roll over except as stated in-app. Points do not replace free rule-based safety features.
+          Health AI Points are virtual credits consumed <strong>only when optional cloud AI processing through our backend and OpenAI runs successfully</strong>. They have no cash value, are non-transferable, and do not roll over except as stated in-app. On-device rule engines, local fallbacks, and core tracking features do not consume points.
         </p>
 
         <h3>4.4 Free tier limits</h3>
@@ -259,9 +260,9 @@
           Sign-in and cloud sync are optional. When enabled, encrypted health payloads may be stored on our backend (see Privacy Policy). Remote caregiver access requires authenticated accounts on both sides and shares data only according to permission tiers you assign. You are responsible for invitations you send and for revoking access when no longer needed.
         </p>
 
-        <h3>4.6 Patient Portal Sync (Beta / Coming Soon)</h3>
+        <h3>4.6 Patient Portal (Coming Soon)</h3>
         <p>
-          The App includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
+          The App includes a <strong>Patient Portal (Coming Soon)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
         </p>
         <ul>
           <li><strong>No OAuth, FHIR, or patient portal connection is activated.</strong> The App cannot log in to your patient portal or download portal records.</li>
@@ -277,17 +278,23 @@
       <section id="ai">
         <h2>5. Artificial Intelligence and Voice Features</h2>
         <p>
-          Optional AI and voice features process text or audio you submit to generate summaries, structured entries, or explanations. AI outputs are <strong>informational only</strong> and may contain errors. You must independently verify AI content before relying on it for any health decision.
+          The App includes on-device rule engines and optional cloud AI through <strong>OpenAI</strong> (text generation and embeddings via our backend). AI outputs are <strong>informational only</strong> and may contain errors. You must independently verify AI content before relying on it for any health decision. We do <strong>not</strong> integrate Google Gemini or other third-party generative AI providers in version 1.0.0.
         </p>
+
+        <h3>5.1 Free on-device (no Health AI Points)</h3>
         <ul>
-          <li>AI features may consume Health AI Points as shown in-app</li>
+          <li>Rule-based visit preparation, lab expanded explanations, medication interaction &ldquo;why it matters&rdquo; narratives, correlation analysis, Health Coach, medication safety scanning, alert-center rule engine, and demo mode</li>
           <li><strong>Offline demo path:</strong> <em>Try demo sample</em> in Voice Symptom uses sample text without uploading audio and does not require sign-in or server configuration</li>
-          <li><strong>Live voice transcription:</strong> Requires microphone permission, sign-in, and a network connection when you initiate recording</li>
-          <li>We may use third-party AI or speech providers to fulfill your request; see the Privacy Policy</li>
+        </ul>
+
+        <h3>5.2 Cloud OpenAI (Health AI Points)</h3>
+        <ul>
+          <li>Health AI Points are consumed only when optional cloud OpenAI processing completes successfully, as shown in-app (typical costs: specialist summary ~5, trend orchestration ~5, voice structuring ~1 when LLM extraction is used, memory embedding index ~5)</li>
+          <li><strong>Live voice transcription and structuring:</strong> Requires microphone permission, sign-in, and a network connection when you initiate recording; points apply only when cloud LLM structuring runs</li>
           <li>We may modify, limit, or discontinue AI models or features at any time</li>
         </ul>
         <p>
-          By using AI or voice features, you grant us a limited license to process the content you submit solely to provide those features.
+          By using cloud AI or voice features, you grant us a limited license to process the content you submit solely to provide those features through OpenAI and our backend.
         </p>
       </section>
 
