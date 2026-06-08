@@ -118,8 +118,8 @@
     <header>
       <h1>ChronicOS Privacy Policy</h1>
       <p class="meta">
-        <strong>Effective date:</strong> June 7, 2026<br />
-        <strong>Last updated:</strong> June 7, 2026<br />
+        <strong>Effective date:</strong> May 28, 2026<br />
+        <strong>Last updated:</strong> May 28, 2026<br />
         <strong>Application:</strong> ChronicOS version 1.0.0 (Bundle ID: com.jchen.ChronicOS) for iPhone and iPad<br />
         <strong>Operator:</strong> An individual software developer publishing ChronicOS (&ldquo;Operator,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
       </p>
@@ -132,7 +132,7 @@
           This Privacy Policy describes how ChronicOS (the &ldquo;App&rdquo;) collects, uses, discloses, retains, and protects information when you download, access, or use the App and any optional cloud features. ChronicOS helps adults organize and track multiple chronic conditions, medications, symptoms, labs, appointments, and caregiver collaboration. The App is a <strong>personal health organization and education tool</strong>. It is <strong>not</strong> a medical device, healthcare provider, insurer, or emergency service.
         </p>
         <p>
-          <strong>Version 1.0.0 scope.</strong> At launch, core features include manual health journaling, voice symptom entry (with an offline demo path), appointment preparation with AI assistance, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, and optional cloud sign-in. <strong>Patient Portal Sync</strong> (automatic import from U.S. health systems such as Epic MyChart) is shown in the App as <strong>Beta / Coming Soon</strong> and is <strong>not active</strong> in version 1.0.0. The App does not connect to third-party patient portals or import portal data until a future update announces that feature as available.
+          <strong>Version 1.0.0 scope.</strong> At launch, core features include manual health journaling, voice symptom entry (with an offline demo path), on-device rule-based visit preparation, medication and lab tracking you enter yourself, rule-based alerts, visit prep exports, and optional cloud sign-in. Optional <strong>cloud AI through OpenAI</strong> (text generation and embeddings, via our backend) may consume Health AI Points when you invoke those features. On-device rule engines (visit prep, lab narratives, medication interaction explanations, correlation analysis, Health Coach, and similar) do <strong>not</strong> consume points. <strong>Patient Portal (Coming Soon)</strong> (automatic import from U.S. health systems such as Epic MyChart) is shown in the App and is <strong>not active</strong> in version 1.0.0. The App does not connect to third-party patient portals or import portal data until a future update announces that feature as available.
         </p>
         <p>
           By using the App, you acknowledge this Privacy Policy. If you do not agree, do not use the App. Where required by law, we request your consent before optional processing (for example, anonymous analytics or personalization of coaching tips).
@@ -160,8 +160,8 @@
           <li><strong>Your health data lives primarily on your device.</strong> You can export or delete it in Settings.</li>
           <li><strong>We do not sell</strong> your personal information or health information.</li>
           <li><strong>We do not use your data for third-party advertising</strong> or cross-app tracking for advertising purposes.</li>
-          <li><strong>Version 1.0.0 focuses on data you enter</strong> (symptoms, meds, labs, vitals, doctors) plus optional AI for visit prep and voice structuring.</li>
-          <li><strong>Patient Portal Sync is Beta / Coming Soon.</strong> We do not pull records from Epic, Cerner, or athenahealth in version 1.0.0. You may optionally join a waitlist with your email.</li>
+          <li><strong>Version 1.0.0 focuses on data you enter</strong> (symptoms, meds, labs, vitals, doctors) plus on-device rule engines for visit prep, lab narratives, med explanations, and correlation. Optional <strong>cloud OpenAI</strong> features consume Health AI Points only when that cloud processing runs.</li>
+          <li><strong>Patient Portal (Coming Soon).</strong> We do not pull records from Epic, Cerner, or athenahealth in version 1.0.0. You may optionally join a waitlist with your email.</li>
           <li><strong>Optional cloud sign-in and sync</strong> store encrypted copies on our backend only when you enable them.</li>
           <li><strong>Family profiles</strong> (multiple household members) are stored locally on your device unless you separately enable cloud sync.</li>
           <li><strong>Remote caregiver access</strong> shares data only with people you invite, according to permissions you set, via our authenticated cloud API when both parties use signed-in accounts.</li>
@@ -171,9 +171,9 @@
       </section>
 
       <section id="portal-beta">
-        <h2>4. Patient Portal Sync (Beta / Coming Soon)</h2>
+        <h2>4. Patient Portal (Coming Soon)</h2>
         <p>
-          The App includes a <strong>Patient Portal Sync (Beta)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
+          The App includes a <strong>Patient Portal (Coming Soon)</strong> screen describing planned integrations with major U.S. electronic health record systems (for example, Epic MyChart, Cerner / Oracle Health, and athenahealth). In version 1.0.0:
         </p>
         <ul>
           <li><strong>No OAuth or FHIR connection is activated.</strong> The App cannot log in to your patient portal or download portal records.</li>
@@ -217,7 +217,7 @@
           <li><strong>Authentication providers</strong> (email/password, Google, or Apple Sign In if enabled): basic account identifiers per their policies</li>
           <li><strong>Patient portal / FHIR:</strong> <em>Not collected in version 1.0.0.</em> In a future release, if you connect a patient portal, we may receive health records you authorize from your health system (for example, Epic MyChart). Their privacy policies will also apply.</li>
           <li><strong>RxNorm / open drug databases</strong> (optional remote lookup during medication safety scan): drug identifiers you submit for interaction checking</li>
-          <li><strong>AI and speech service providers</strong> (only when you use paid AI features or live voice transcription): the minimum text or audio needed to fulfill your request</li>
+          <li><strong>OpenAI</strong> (cloud text generation and embeddings, via our backend): the minimum text or audio needed to fulfill optional cloud AI requests that consume Health AI Points, or for live voice transcription when you initiate it</li>
         </ul>
 
         <h3>5.4 What we do not collect by design (version 1.0.0)</h3>
@@ -304,9 +304,10 @@
         <p>We use information only for purposes compatible with operating the App:</p>
         <ul>
           <li>Provide core features: multi-condition dashboard, manual symptom diary, voice symptom entry, medication list and safety scanning, lab trends, visit preparation and AI-assisted summaries, between-visit coaching, rule-based alerts, exports, doctor records, and patient timeline</li>
-          <li>Display Patient Portal Sync (Beta) information and process voluntary waitlist sign-ups stored on your device</li>
+          <li>Display Patient Portal (Coming Soon) information and process voluntary waitlist sign-ups stored on your device</li>
           <li>Support <strong>household switching</strong> among local patient profiles on your device</li>
-          <li>Operate <strong>optional AI-assisted features</strong> that may consume Health AI Points (appointment prep, provider summaries, lab interpretation, voice structuring, longitudinal analysis, medication interaction explanations)</li>
+          <li>Provide <strong>on-device rule-based features at no point cost</strong>, including visit preparation, lab trend narratives, medication interaction explanations, correlation analysis, Health Coach, medication safety scanning, and PDF export</li>
+          <li>Operate <strong>optional cloud AI through OpenAI</strong> (text generation and embeddings via our backend) that consumes Health AI Points only when cloud processing completes successfully — for example: specialist/provider summaries (~5 points), full trend orchestration (~5 points), live voice symptom structuring (~1 point when LLM extraction is used), and OpenAI embedding-based longitudinal memory indexing (~5 points). On-device rule engines and local fallbacks do not consume points</li>
           <li>Process <strong>auto-renewable subscriptions</strong> and consumable Health AI Point packs through platform billing</li>
           <li>Enable <strong>caregiver invitations, acceptance, and scoped remote access</strong> according to permissions you configure</li>
           <li>Sync or back up data to our cloud database <strong>only when you sign in and initiate sync</strong></li>
@@ -368,8 +369,8 @@
               <td>Authenticated requests, encrypted payloads, API logs</td>
             </tr>
             <tr>
-              <td>OpenAI or equivalent (AI / speech)</td>
-              <td>Voice transcription and AI summarization when you invoke those features</td>
+              <td>OpenAI (cloud AI / speech)</td>
+              <td>Voice transcription, text summarization, and embeddings when you invoke optional cloud AI features</td>
               <td>Audio or text you submit for that request</td>
             </tr>
             <tr>
